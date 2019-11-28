@@ -17,10 +17,8 @@ export default class extends React.Component {
 
             <header>Podcasts</header>
             <div className="channels">
-
-
                 {channels.map((channel) => (
-                    <Link href="/channel" prefetch>
+                    <Link href={`/channel?id=${channel.id}`} prefetch>
                         <a className="channel">
                             <div className="channel">
                                 <img src={channel.urls.logo_image.original} alt="" />
@@ -28,9 +26,7 @@ export default class extends React.Component {
                             </div>
                         </a>
                     </Link>
-
                 ))}
-
             </div>
 
             <style jsx>{`
