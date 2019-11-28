@@ -15,6 +15,7 @@
   "author": "Alberto González Balderas",
   "license": "ISC",
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "next": "^9.1.4",
     "node": "^13.1.0",
     "react": "^16.12.0",
