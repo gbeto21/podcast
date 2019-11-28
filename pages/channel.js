@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default class extends React.Component {
 
     static async getInitialProps({ query }) {
@@ -36,7 +38,13 @@ export default class extends React.Component {
 
             <h2>Últimos podcast</h2>
             {audioClips.map((clip) => (
-                <div>{clip.title}</div>
+                <div>
+                    <Link href={`/podcast?id=${clip.id}`}>
+                        <a className="channel">
+                            {clip.title}
+                        </a>
+                    </Link>
+                </div>
             ))}
 
             <style jsx>{`
