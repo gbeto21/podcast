@@ -1,7 +1,6 @@
 import 'isomorphic-fetch'
-
 import Layout from '../components/Layout'
-import ChannelGrid from '../components/ChannelGrid'
+import ChannelsGrid from '../components/ChannelsGrid'
 
 export default class extends React.Component {
 
@@ -14,11 +13,8 @@ export default class extends React.Component {
     render() {
 
         const { channels } = this.props
-
         return <Layout title="Podcast">
-
-            <ChannelGrid channels={channels} />
-
+            <ChannelsGrid channels={channels} />
         </Layout>
 
     }
