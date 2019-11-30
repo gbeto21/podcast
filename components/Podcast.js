@@ -1,4 +1,3 @@
-import 'isomorphic-fetch'
 import Volver from '../components/Volver'
 import PodcastImage from '../components/PodcastImage'
 import PodcastPlayer from '../components/PodcastPlayer'

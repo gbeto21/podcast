@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import ChannelGrid from './ChannelGrid'
 
 export default class ChanneslGrid extends React.Component {
