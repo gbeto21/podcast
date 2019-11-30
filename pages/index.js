@@ -1,7 +1,7 @@
 import 'isomorphic-fetch'
 import Layout from '../components/Layout'
 import ChannelsGrid from '../components/ChannelsGrid'
-import Error from 'next/error'
+import Error from './_error'
 
 export default class extends React.Component {
 
