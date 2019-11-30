@@ -1,5 +1,6 @@
+import 'isomorphic-fetch'
 import Channel from '../components/Channel'
-import Error from 'next/error'
+import Error from './_error'
 
 export default class extends React.Component {
 
@@ -20,7 +21,7 @@ export default class extends React.Component {
                     channel: null,
                     audioClips: null,
                     series: null,
-                    satusCode: 404
+                    statusCode: 404
                 }
             }
 
@@ -36,7 +37,7 @@ export default class extends React.Component {
             return { channel, audioClips, series, statusCode: 200 }
 
         } catch (error) {
-            // res.statusCode = 503
+            res.statusCode = 503
             return { channel: null, audioClips: null, series: null, satusCode: 503 }
         }
 
